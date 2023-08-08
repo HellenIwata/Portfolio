@@ -3,185 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellen Iwata</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Hellen Iwata</title>
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header>
         <nav class="menu">
-            <a href="#container__First" class="menu__Link">Início</a>
-            <a href="#container__About" class="menu__Link">Sobre</a>
-            <a href="#container__Projects" class="menu__Link">Projetos</a>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+            </ul>
         </nav>
-    </header>    
+    </header>
 
-    <main id="container__main">
-        <section class="container__First">
-            <div class="first__Content">
-                <h1 class="content_Title">Hellen Iwata</h1>
-                <h2 class="content_Subtitle">Desenvolvedora junior front-end</h2>
-                <p class="content__Text">Olá, me chamo Hellen e sou uma jovem desenvolvedora front-end, com especialidade em HTML, CSS e JavaScript. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+    <main class="container">
+        <article id="inicio">
+            <section class="container_Inicio">
+                <div>
+                    <div class="inicio_Titulo">
+                        <h1 class="conteudo_Titulo">Hellen Iwata</h1>
+                        <h2 class="conteudo_Subtitulo">Desenvolvedora júnior front-end</h2>
+                        <p class="conteudo_Texto">Olá, me chamo Hellen e sou uma jovem desenvolvedora front-end, com especialidade em HTML, CSS e JavaScript. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+                    </div>
+        
+                    <div class="inicio_Links">
+                        <h2 class="conteudo_Subtitulo">Acesse minhas redes e entre contato comigo:</h2>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/HellenIwata" class="link" target="_blank">
+                                    <img src="./assets/img/github.png" alt="Icone logo do Github" class="bota">
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="https://www.linkedin.com/in/helleniwata/">
+                                    <img src="./assets/img/linkedin.png" alt="Icone logo do LinkedIn" class="botao"> 
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="mailto:hellen.iwata001@gmail.com" target="_blank" class="link">
+                                    <img src="./assets/img/email.png" alt="Icone Logo email" class="botao">
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="https://web.whatsapp.com/send?phone=11930889923" target="_blank" class="link">
+                                    <img src="./assets/img/wpp.png" alt="Icone logo WhatsApp" class="botao">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+            </section>
+            <div class="inicio_Foto">
+                <img src="./assets/img/perfil__Inicio.jpg" alt="Foto perfil Hellen"> 
             </div>
+        </article>
+        
+        <article id="sobre">
+            <h1 class="titulo_Secao">Sobre mim</h1>
+            <div>
+                <div class="conteudo_Sobre">
+                    
+                    <h2 class="subtitulo_Sobre"> Hellen Cristina Neves Iwata</h2>
+                    <h2 class="subtitulo_Sobre">Estagiária em Cloud Plataforms - <span><a href="tivit.com.br" class="link">TIVIT</a></span> </h2>
+                    
+                    
+                    <p class="conteudo_Texto">Atualmente sou estagiária na empresa TIVIT, sendo a minha primeira oportunidade de atuar dentro da área da tecnologia. Tenho conhecimento em HTML, CSS e estou adquirindo conhecimento em JavaScript e Python.</p>
 
-            <!--Início da seção 'Início'-->
-            <div class="first__Links">
-                <h2 class="content_Subtitle">Acesse minhas redes e entre em contato comigo:</h2>
-                <nav class="links">
-                    <a href="https://github.com/HellenIwata" class="link" target="_blank">
-                        <img src="./assets/icons/uil_github.svg" alt="Icone logo do Github" class="link__Icons"> Github
-                    </a>
-                    <a href="https://www.linkedin.com/in/helleniwata/" class="link" target="_blank">
-                        <img src="./assets/icons/entypo-social_linkedin-with-circle.svg" alt="Icone logo do LinkedIn" class="link__Icons"> LinkedIn
-                    </a>
-                    <a href="mailto:hellen.iwata001@gmail.com" class="link" target="_blank">
-                        <img src="./assets/icons/entypo_email.svg" alt="Icone Logo email" class="link__Icons"> E-mail
-                    </a>
-                    <a href="https://web.whatsapp.com/send?phone=11930889923" class="link" target="_blank">
-                        <img src="./assets/icons/ri_whatsapp-fill.svg" alt="Icone logo WhatsApp" class="link__Icons"> WhatsApp
-                    </a>
-                </nav>
-            </div>
-            <img src="./assets/img/perfil__Inicio.jpg" alt="Foto perfil Hellen" class="first__Photo">
-        </section>
-        <!--Fim da seção 'Início'-->
+                    <p class="conteudo_Texto">Atuo na área de Middleware realizando por exemplo, parada e subida de aplicações (como JBOSS e TOMCAT) quando há indisponibilidade dela, atuação na ferramenta do Jenkins, substituição de arquivos no ambiente Linux e Windows, checagem de conexão de portas. Além disso, atuei também em sistemas operacionais com Linux, realizando montagem, limpezas e rotacionamento de filesystem, análises de serviços que oneram a CPU, memória, entre outros tópicos, garantindo a métrica escolhida pelos clientes.</p>
 
-        <!-- Inicio da seção 'Sobre' -->
-        <section id="container__About">
-            <h1 class="section__Title">Sobre a Hellen</h1>
-            <div class="about__Content">
-                <h2 class="about__Subtitle">Hellen Cristina Neves Iwata</h2>
-                <h3 class="about__Subtitle">Estagiária em Cloud Plataforms - TIVIT</h3>
-                <p class="content__Text">Atualmente sou estagiária na empresa <a href="" class="link_Text" target="_blank">TIVIT</a>, sendo a minha primeira oportunidade de atuar dentro da área da tecnologia.</p>
-                <p class="content__Text">Tenho conhecimento em HTML, CSS e estou adquirindo conhecimento em JavaScript e Python.</p>
-                <p class="content__Text">Atuo na área de Middleware realizando por exemplo, parada e subida de aplicações (como JBOSS e TOMCAT) quando há indisponibilidade dela, atuação na ferramenta do Jenkins, substituição de arquivos no ambiente Linux e Windows, checagem de conexão de portas. Além disso, atuei também em sistemas operacionais com Linux, realizando montagem, limpezas e rotacionamento de filesystem, análises de serviços que oneram a CPU, memória, entre outros tópicos, garantindo a métrica escolhida pelos clientes.</p>
-                <p class="content__Text">Tenho experiência profissional em atendimento ao cliente, realizando a análise de risco para inúmeras transações financeiras e atuando com o'backoffice' para análise mais profunda e resolução de casos.</p>                
-            </div>
-    
-            <div class="card__div">
-                <h2 class="title_div">FORMAÇÃO</h2>
-                <div class="formation">
-                    <h2 class="about__Subtitle"> Sistemas de informação - Bacharelado</h2>
-                    <ul>
-                        <li>Instituição: <a href="https://portal.anhembi.br/" target="_blank">Anhembi Morumbi - EAD</a></li>
-                        <li>Previsão de conclusão: Dezembro/2024</li>
-                    </ul>
+                    <p class="conteudo_Texto">Tenho experiência profissional em atendimento ao cliente, realizando a análise de risco para inúmeras transações financeiras e atuando como 'backoffice' para análise mais profunda e resolução de casos.</p>
                 </div>
 
-                <div class="formation">
-                    <h2 class="about__Subtitle">Formação em Python | Complementar</h2>
-                    <ul>
-                        <li>Instituição: <a href="https://www.alura.com.br/" target="_blank">Alura</a> | Complementar</li>
-                        <li>Previsão de conclusão: Setembro/2023</li>
-                        <li>Repositório Github: <a href="#">Sem Repositório</a></li>
-                    </ul>
-                </div>
+                <div class="card_Sobre">
+                    <div class="card">
+                        <h2 class="conteudo_Subtitulo">FORMAÇÃO</h2>
 
-                <div class="formation">
-                    <h2 class="about__Subtitle">Linux Fundamentals | Complementar</h2>
-                    <ul>
-                        <li>Instituição: <a href="https://www.dio.me/" target="_blank">DIO - Digital Innovation One</a> | Complementar</li>
-                        <li>Concluído em: Fevereiro/2023</li>
-                        li>Repositório Github: <a href="https://github.com/HellenIwata/linuxFundamentals-Dio" target="_blank">Linux Fundamentals - Dio</a></li>
-                    </ul>
-                </div>
+                        <h2 class="subtitulo_Sobre">Sistemas de informação</h2>
+                        <ul>
+                            <li>Instituição: <a href="https://portal.anhembi.br/" target="_blank" class="link_card">Anhembi Morumbi - EAD</a> | Bacharelado</li>
+                            <li>Previsão de conclusão: Dezembro/2024</li>
+                        </ul>
 
-                <div class="formation">
-                    <h2 class="about__Subtitle">Desenvolvimento Web front-end | Complementar</h2>
-                    <ul>
-                        <li>Instituição: <a href="https://ios.org.br/" target="_blank">IOS - Instituto da Oportunidade Social</a></li>
-                        <li>Concluído em: Dezembro/2021</li>
-                        <li>Repositório Github: <a href="https://github.com/HellenIwata/Psicologicamente" target="_blank">Psicologicamente</a></li>
-                    </ul>
-                </div>
+                        <h2 class="subtitulo_Sobre">Formação em Python</h2>
+                        <ul>
+                            <li>Instituição: <a href="https://www.alura.com.br/" target="_blank" class="link_card">Alura</a> | Complementar</li>
+                            <li>Previsão de conclusão: Setembro/2023</li>
+                            <li>Repositório Github: <a href="#" class="link_card">Sem Repositório</a></li>
+                        </ul>
 
-                <div class="formation">
-                    <h2 class="about__Subtitle">Administração | Técnico</h2>
-                    <ul>
-                        <li><a href="https://www.cps.sp.gov.br/etecs/etec-albert-einstein-casa-verde/" target="_blank">ETEC Albert Einstein</a></li>
+                        <h2 class="subtitulo_Sobre">Linux Fundamentals</h2>
+                        <ul>
+                            <li>Instituição: <a href="https://www.dio.me/" target="_blank" class="link_card">DIO - Digital Innovation One</a> | Complementar</li>
+                            <li>Concluído em: Fevereiro/2023</li>
+                            <li>Repositório Github: <a href="https://github.com/HellenIwata/linuxFundamentals-Dio" target="_blank" class="link_card">Linux Fundamentals - Dio</a></li>
+                        </ul>
+
+                        <h2 class="subtitulo_Sobre">Desenvolvimento Web front-end</h2>
+                        <ul>
+                            <li>Instituição: <a href="https://ios.org.br/" target="_blank" class="link_card">IOS - Instituto da Oportunidade Social</a> | Complementar</li>
+                            <li>Concluído em: Dezembro/2021</li>
+                            <li>Repositório Github: <a href="https://github.com/HellenIwata/Psicologicamente" target="_blank" class="link_card">Psicologicamente</a></li>
+                        </ul>
+
+                        <h2 class="subtitulo_Sobre">Administração</h2>
+                        <ul>
+                        <li>Instituição: <a href="https://www.cps.sp.gov.br/etecs/etec-albert-einstein-casa-verde/" target="_blank" class="link_card">ETEC Albert Einstein</a> | Técnico</li>
                         <li>Concluído em: Dezembro/2017</li>
-                    </ul>
-                </div>
-            </div>
+                        </ul>
+                    </div>
+    
+                    <div class="card">
+                        <h2 class="conteudo_Subtitulo">CERTIFICAÇÕES</h2>
+                        <div class="card_Subconteudo"> 
+                            <h2 class="subtitulo_Sobre">Network Security Associate | <a href="" class="link">Fortinet</a></h2>
+                            <ul>
+                                <li>Concluído em: Julho/2023 | Expira em: Julho/2025</li>
+                                <li>Código para visualizar o certificado: uczbLIBY3u | ORBKygHePC</li>
+                            </ul>
+                            <div class="logo_Certificacao">
+                                <figure>
+                                    <a href="https://training.fortinet.com/mod/customcert/verify_certificate.php" target="_blank">
+                                        <img src="./assets/img/nse1__Logo.png" alt="Logo da certificação NSE 1 da fortinet">
+                                    </a>
+                                </figure>
+                                <figure>
+                                    <a href="https://training.fortinet.com/mod/customcert/verify_certificate.php" target="_blank">
+                                        <img src="./assets/img/nse2__Logo.png" alt="Logo da certificação NSE 2 da fortinet">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div> 
+                    </div>
+    
+                    <div class="card">
+                        <h2 class="conteudo_Subtitulo">EXPERIÊNCIA</h2>
 
-            <div class="card__div">
-                <h2 class="title_div">CERTIFICAÇÕES</h2>
-                <div class="certification__Content">
-                    <h2 class="about__Subtitle">Network Security Associate | Fortinet</h2>
-                    <ul>
-                        <li>Concluído em: Julho/2023 | Expira em: Julho/2025</li>
-                    </ul>
-                    <div class="certification__Logo">
-                        <p>
-                            Código para visualizar o certificado: uczbLIBY3u
-                            <a href="https://training.fortinet.com/mod/customcert/verify_certificate.php" target="_blank">
-                                <img src="./assets/img/nse1__Logo.png" alt="Logo da certificação NSE 1 da fortinet">
-                            </a>
-                        </p>
-                        <p>
-                            Código para visualizar o certificado: ORBKygHePC
-                            <a href="https://training.fortinet.com/mod/customcert/verify_certificate.php" target="_blank">
-                                <img src="./assets/img/nse2__Logo.png" alt="Logo da certificação NSE 2 da fortinet">
-                            </a>
-                        </p>
+                        <h2 class="subtitulo_Sobre">Programa de Estágio | <a href="https://tivit.com/" target="_blank" class="link">TIVIT</a></h2>
+                        <ul>
+                            <li>Agosto/2022 - Atual</li>
+                            <li>Análise e monitoração das principais falhas de ambientes híbridos (Windows, Linux e Webservices), analisar e desenvolver de forma prática nas ferramentas de Webservices como JBoss, Apache TomCat, WebSphere e Java EE. Além de realizar o controle e garantia dos indicadores contratados pelos clientes, como o SLA.</li>
+                        </ul>
+
+                        <h2 class="subtitulo_Sobre">Analista de atendimento sênior | <a href="https://foundever.com/pt-br/" target="_blank" class="link">Foundever</a></h2>
+                        <ul>
+                            <li>Fevereiro/2021 - Julho/2022</li>
+                            <li>Suporte aos analistas em tempo real de atendimento, atuação como 'Backoffice' para análise mais profunda e resolução de casos, e, realização de análises de risco para várias movimentações financeiras.</li>
+                        </ul> 
+
+                        <h2 class="subtitulo_Sobre">Analista de atendimento ao cliente | <a href="https://foundever.com/pt-br/" target="_blank" class="link">Foundever</a></h2>
+                        <ul>
+                            <li>Setembro/2019 - Janeiro/2021</li>
+                            <li>Suporte à todos os usuários do maior processador de pagamentos online do mundo. Fazendo análise inicial de dados para prevenção de fraudes, transações de risco e verificação de dados.</li>
+                        </ul>
+
+                        <h2 class="subtitulo_Sobre">Agente de atendido ao cliente | <a href="https://foundever.com/pt-br/" target="_blank" class="link">Foundever</a></h2>
+                        <ul>
+                            <li>Fevereiro/2019 - Agosto/2019</li>
+                            <li>Suporte as máquinas de cartão, auxiliando na resolução inicial de problemas técnicos (como conectividade e impressão) e agendamento de segundo contato e físitas técnicas para a troca da máquina.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </article>
 
-            <div class="card__div">
-                <h2 class="title_div">EXPERIÊNCIA</h2>
-                <div class="experience">
-                    <h2 class="about__Subtitle">Programa de Estágio | <a href="https://tivit.com/" target="_blank">TIVIT</a></h2>
-                    <ul>
-                        <li>Agosto/2022 - Atual</li>
-                        <li>Análise e monitoração das principais falhas de ambientes híbridos (Windows, Linux e Webservices), analisar e desenvolver de forma prática nas ferramentas de Webservices como JBoss, Apache TomCat, WebSphere e Java EE. Além de realizar o controle e garantia dos indicadores contratados pelos clientes, como o SLA.</li>
-                    </ul>
-                </div>
+        <article id="projetos">
+            <h1 class="titulo_Secao">Projetos</h1>
+            <div class="card_Projetos">
+                <div class="card">
+                    <h2 class="conteudo_Subtitulo">FRONT-END</h2>
+                    <h2 class="subtitulo_Sobre">Psicologicamente</h2>
+                    <p class="conteudo_Texto"> A prospota do projeto é produzir uma aplicação com as linguagens e tecnologias estudadas ao longo da formação do curso de Desenvolvimento Web realizado no IOS. Com isso, o objetivo da aplicação é disponibilizar informações gerais sobre a psicologia, fazer com que as pessoas tenham interesse no assunto, entender a importância da saúde mental e trazer a facilidade no acesso da informação.</p>
+                    <p class="conteudo_Texto">Para mais informações sobre a aplicação <a href="https://www.canva.com/design/DAEy19PQgb4/F7DyJFtjd8BKQQLeInTH1w/view?utm_content=DAEy19PQgb4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="link_card">clique aqui para acessar a apresentação</a> e clique na imagem para acessar a aplicação.</p>
 
-                <div class="experience">
-                    <h2 class="about__Subtitle">Analista de atendimento sênior | <a href="https://foundever.com/pt-br/" target="_blank">Foundever</a></h2>
-                    <ul>
-                        <li>Fevereiro/2021 - Julho/2022</li>
-                        <li>Suporte aos analistas em tempo real de atendimento, atuação como 'Backoffice' para análise mais profunda e resolução de casos, e, realizzação de análises de risco para várias movimentações financeiras.</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
-                    <h2 class="about__Subtitle">Analista de atendimento ao cliente | <a href="https://foundever.com/pt-br/" target="_blank">Foundever</a></h2>
-                    <ul>
-                        <li>Setembro/2019 - Janeiro/2021</li>
-                        <li>Suporte à todos os usuários do maior processador de pagamentos online do mundo. Fazendo análise inicial de dados para prevenção de fraudes, transações de risco e verificação de dados.</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
-                    <h2 class="about__Subtitle">Agente de atendido ao cliente | <a href="https://foundever.com/pt-br/" target="_blank">Foundever</a></h2>
-                    <ul>
-                        <li>Fevereiro/2019 - Agosto/2019</li>
-                        <li>Suporte as máquinas de cartão, auxiliando na resolução inicial de problemas técnicos (como conectividade e impressão) e agendamento de segundo contato e físitas técnicas para a troca da máquina.</li>
-                    </ul>
+                    <div class="logo_Certificacao">
+                        <figure>
+                            <a href="https://helleniwata.github.io/Psicologicamente/" target="_blank">
+                                <img src="./assets/img/psicologicamente.png" alt="Foto da tela inicial da aplicação Psicologicamente" class="img_Projetos">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="container__Projects">
-            <h1 class="section__Title">Projetos</h1>
-            
-                <div class="card__div">
-                    <h2 class="title_div">FRONT-END</h2>
-                    <h2 class="about__Subtitle">Psicologicamente</h2>
-                    <p class="content__Text"> A prospota do projeto é produzir uma aplicação com as linguagens e tecnologias estudadas ao longo da formação do curso de Desenvolvimento Web realizado no IOS. Com isso, o objetivo da aplicação é disponibilizar informações gerais sobre a psicologia, fazer com que as pessoas tenham interesse no assunto, entender a importância da saúde mental e trazer a facilidade no acesso da informação.</p>
-                    <p class="content__Text">Para mais informações sobre a aplicação <a href="https://www.canva.com/design/DAEy19PQgb4/F7DyJFtjd8BKQQLeInTH1w/view?utm_content=DAEy19PQgb4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">clique aqui para acessar a apresentação</a> e clique na imagem para acessar a aplicação.</p>
-                    <a href="https://helleniwata.github.io/Psicologicamente/" target="_blank">
-                        <img src="./assets/img/psicologicamente.png" alt="Foto da tela inicial da aplicação Psicologicamente">
-                    </a>
-                </div>
-        </section>
+        </article>
     </main>
-
     <footer class="rodape">
-        <h3>Densolvido por Hellen Iwata</h3>
+        <p class="texto_Rodape">Desenvolvido por Hellen Iwata</p>
     </footer>
 </body>
-
 </html>
