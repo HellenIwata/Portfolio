@@ -10,15 +10,34 @@
     text-decoration: none;
 }
 
+/* Declarando as variáveis */
+:root {
+    /*declarando as cores*/
+    --cor-fundo:#111111f8;
+    --cor-texto:#fff;
+    --cor-titulo:#86eefe;
+    --cor2:#009ab2;
+    --cor-borda:rgba(0, 206, 238, 0.925);
+
+    /*Declarando estilo da fonte*/
+    --estilo-padrao:'Jost', sans-serif;
+    --estilo-titulo: 'Langar', serif;
+
+    /*Declrando os tamanhos das fontes*/
+    --tamanho-fonte-padrao: 1.25em;
+    --tamanho-fonte-titulos: 2em;
+    --tamanho-fonte-subtitulos: 1.5em;
+}
+
 body{
-    background-color: #111111f8;
-    color: #fff;
-    font-family: 'Jost', sans-serif;
-    font-size: 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--estilo-padrao);
+    font-size: var(--tamanho-fonte-padrao);
 }
 
 header{
-    background-color: #009ab2;
+    background-color: var(--cor2);
 }
     .menu ul{
         display: flex;
@@ -26,12 +45,14 @@ header{
         padding: 10px;
     }
     .menu ul li a{
-        color: #111111f8;
+        color:var(--cor-fundo);
         font-size: 24px;
         font-weight:600;
+        transition: color 1.5s;
     }
+        .menu ul li a:active,
         .menu ul li a:hover{
-            color: #fff;
+            color: var(--cor-texto);
         }
 
         .container{
@@ -40,9 +61,9 @@ header{
             flex-direction: column;
         }
 
-#inicio{
+#inicio, #sobre, #projetos{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container_Inicio{
@@ -50,9 +71,7 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
     justify-content: space-between;
-    
 }
 .inicio_Titulo{
     align-items: center;
@@ -64,13 +83,13 @@ header{
     
 }
     .conteudo_Titulo, .conteudo_Subtitulo{
-        color: #86eefe;
-        font-family: 'Langar';
-        font-size: 2em;
+        color: var(--cor-titulo);
+        font-family: var(--estilo-titulo);
+        font-size: var(--tamanho-fonte-titulos);
         text-align: center;
     }
     .conteudo_Subtitulo{
-        font-size: 1.5em;
+        font-size: var(--tamanho-fonte-subtitulos);
     }
     .conteudo_Texto{
         text-align: justify;
@@ -83,12 +102,18 @@ header{
     flex-wrap: wrap;
     gap: .25em;
     justify-content: space-between;
+    transform: scale(1);
+    
 }
 .inicio_Links ul li{
     padding-bottom: 15px;
 }
+.inicio_Links li a img{
+    transition: transform 700ms;
+}
+
 .inicio_Links li a img:hover{
-    width: 165px;   
+    transform: scale(1.2);
 }
 
 .inicio_Foto{
@@ -96,11 +121,10 @@ header{
     width: 300px;
 }
 
-#sobre, {
-    display: flex;
+#sobre, #projetos{
     flex-direction: column;
-    height: 130vh;
 }
+
 .conteudo_Sobre{
     display: flex;
     justify-content: space-around;
@@ -110,20 +134,21 @@ header{
     
 }
     .subtitulo_Sobre{
-        border: 2px solid  rgba(0, 206, 238, 0.925);
+        border: 2px solid var(--cor-borda);
         border-radius: 80em;
-        color: #86eefe;
-        font-family: 'Langar';
+        color: var(--cor-titulo);
+        font-family: var(--cor-titulo);
         font-size: 18px;
         text-align: center;
     }
 
         .link{
             color:#009ab2;
+            transition: color 1.5s;
         }
+        .link:active,
         .link:hover{
-            color: #b20000;
-            
+            color: #b20000;          
         }
 
     .card_Sobre{
@@ -141,7 +166,9 @@ header{
 
         .link_card{
             color: #86eefe;
+            transition: color 1.5s;
         }
+        .link_card:active,
         .link_card:hover{
             color: #009ab2;
         }
@@ -156,9 +183,6 @@ header{
             padding: 2%;
         }
 #projetos{
-    display: flex;
-    height: 125vh;  
-    flex-direction: column;
     padding: 2%;
 }
 
@@ -169,6 +193,15 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     width: auto;        
+}
+
+.img_Projetos{
+    transform: scale(1);
+    transition: transform 700ms;
+}
+
+.img_Projetos:hover{
+    transform: scale(1.2);
 }
 .rodape{
     background-color: #009ab2;
